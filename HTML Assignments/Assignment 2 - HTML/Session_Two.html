@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <style>
+        .rounded-box {
+            border: 1px solid #e3e3e3;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        table, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+    }
+    </style>
+</head>
+<body>
+    <header class="rounded-box">
+        <h1>Welcome to Semantic HTML Showcase</h1>
+        <p><mark>This page is designed using semantic HTML5 tags.</mark></p>
+    </header>
+    <br>
+    <nav class="rounded-box">
+        <a href="#About">About</a></li>&nbsp;&nbsp;
+        <a href="#Features">Features</a></li>&nbsp;&nbsp;
+        <a href="#Contact">Contact</a></li>&nbsp;&nbsp;
+        <a href="#">Coming Soon</a></li>
+    </nav>
+    <br>
+    <section class="rounded-box">
+        <section class="rounded-box" id="About">
+            <h3>Hyperlinks</h3>
+            <p>Visit <a href="https://www.w3schools.com">W3Schools.com</a> to learn HTML.</p>
+            <p><a href="#lists">Go to List Section</a></p>
+        </section>
+        <br>
+        <section class="rounded-box">
+            <h3>Accessible Image</h3>
+            <img src="images/star_image.png" alt="star image" width="250" height="250">
+            <p>A basic DOM Structure image</p>
+        </section>
+        <br>
+        <section class="rounded-box" id="lists">
+            <h3>Useful HTML Lists</h3>
+            <p><b>Unordered List:</b></p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+                <p><b>Ordered List (type="A"):</b></p>
+            <ol type="A">
+                <li>Semantic Tags</li>
+                <li>Forms</li>
+                <li>Tables</li>
+            </ol>
+                <p><b>Description List:</b></p>
+            <dl>
+                <dt>Coffee</dt>
+                <dd>- Black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- White cold drink</dd>
+            </dl>
+        </section>
+        <br>
+        <section class="rounded-box" id="Features">
+            <h3>Table Example</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Semantic Tag</td>
+                        <td>Gives meaning to content</td>
+                    </tr>
+                    <tr>
+                        <td>Non-semantic Tag</td>
+                        <td>Only used for layout (<code>&lt;div&gt;</code>,<code>&lt;span&gt;</code>)</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">More tags to be added soon...</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <br>
+        <section class="rounded-box">
+            <h3>Quick Tip</h3>
+            <p>Always use the <code>alt</code> attribute in <code>&lt;img&gt;</code> for accessibility and SEO.</p>
+        </section>
+    </section>
+    <br>
+    <section class="rounded-box" id="Contact">
+        <h3>Contact Us</h3>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="2" cols="18"></textarea><br>
+        <button type="submit">Send</button>
+    </section>
+</body>
+<br>
+<footer class="rounded-box">
+    <p>&copy; 2025 Semantic Web Tutorial</p>
+    <p>Validate your code at <a href="https://validator.w3.org/">W3C Validator</a></p>
+
+</footer>
+</html>
