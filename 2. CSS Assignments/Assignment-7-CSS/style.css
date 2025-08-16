@@ -1,0 +1,220 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #fff;
+    color: #000000;
+    line-height: 1.7;
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    direction: ltr;
+}
+.SUMMARY{
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.058);
+    text-transform: uppercase;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    letter-spacing: 2px;
+}
+.Resume{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 5rem;
+    position: relative;
+    padding-bottom: 5px;
+    color: #252b33;
+}
+.Resume::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1de9b6;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.resume-content{
+    text-align: left;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "education experience";
+    gap: 30px;
+}
+.Education{
+    grid-area: education;
+}
+.Experience{
+    grid-area: experience;
+}
+.Education .Experience h4{
+    font-size: 1.5rem;
+    color: #252b33;
+    margin-bottom: 30px;
+}
+.item{
+    padding: 25px;
+    border: 1px solid #e9e9e9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.item .date{
+    background-color: #1de9b6;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+.item h5{
+    font-size: 1.25rem;
+    margin: 15px 0 10px 0;
+    color: #252b33;
+}
+.item .company{
+    color: #ff4081;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+.item .description{
+    font-size: 0.95em;
+    color: #6c757d;
+    margin: 0;
+}
+.skills .section-title{
+    text-align: left;
+}
+.skills-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "skills-left skills-right";
+    gap: 50px;
+}
+.skills-column:nth-child(1) {
+    grid-area: skills-right;
+}
+.skills-column:nth-child(2) {
+    grid-area: skills-left;
+}
+.skill-item {
+    margin-bottom: 25px;
+}
+.info{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.skill-item {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 0.8em;
+    color: #000;
+    z-index: 1;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e9e9e9;
+    height: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+.progress {
+    background-color: #1de9b6;
+    height: 100%;
+    border-radius: 4px;
+    position: relative;
+}
+.btn{
+    text-align: center;
+    font-size: large;
+    margin-top: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+}
+.PORTFOLIO{
+    font-size: 8rem;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.058);
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    letter-spacing: 2px;
+}
+.My-Work{
+    font-size: 2.5rem;
+    font-weight: 700;
+    top: 75px;
+    position: relative;
+    padding-bottom: 5px;
+    color: #252b33;
+}
+.My-Work::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #1de9b6;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+    margin-top: 120px;
+}
+.nav a {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: bold;
+}
+.nav a.active {
+    color: #1de9b6;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 250px;
+    column-gap: 20px; 
+    gap: 80px;
+}
+.photo:nth-child(2),
+.photo:nth-child(4) {
+    grid-row: span 2;
+}
+.photo:nth-child(3n+1),
+.photo:nth-child(3n) {
+    margin-bottom: 10px;
+}
+.photo:nth-child(3n+2) {
+    margin-bottom: 40px; 
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 8px
+}
