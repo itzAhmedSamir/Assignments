@@ -26,14 +26,14 @@ body {
 .navbar-nav .nav-link {
     font-weight: 500;
     margin: 0 0.5rem;
-    color: #fff !important;
+    color: white;
     text-transform: uppercase;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #007bff !important;
+    color: #007bff;
 }
 
 /* Hero Section Styles */
@@ -176,19 +176,19 @@ html {
 }
 
 .skill-85 {
-    width: 85% !important;
+    width: 85%;
 }
 
 .skill-75 {
-    width: 75% !important;
-}
-
-.skill-90 {
-    width: 90% !important;
+    width: 75%;
 }
 
 .skill-50 {
-    width: 50% !important;
+    width: 50%;
+}
+
+.skill-90 {
+    width: 90%;
 }
 
 .about-content {
